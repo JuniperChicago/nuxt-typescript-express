@@ -24,3 +24,5 @@ $ yarn run generate
 ## Azure Deployment
 
 [![Deploy to Azure](https://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
+
+The file `azuredeploy.json`, is a [Azure Resource Manager (ARM)](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-authoring-templates) template that makes setting up a working instance of a NuxtJS site on Azure significantly easier.

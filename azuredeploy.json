@@ -3,41 +3,51 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "siteName": {
-      "type": "string"
+      "type": "string",
+      "metadata": {
+        "description": "The name of the web app that you wish to create."
+      }
     },
     "hostingPlanName": {
-      "type": "string"
+      "type": "string",
+      "metadata": {
+        "description": "The name of the App Service plan to use for hosting the web app."
+      }
     },
     "siteLocation": {
-      "type": "string"
+      "type": "string",
+      "metadata": {
+        "description": "The location to use for creating the web app and hosting plan. It must be one of the Azure locations that support web apps."
+      }
     },
     "sku": {
       "type": "string",
-      "allowedValues": [
-        "Free",
-        "Shared",
-        "Basic",
-        "Standard"
-      ],
+      "allowedValues": ["Free", "Shared", "Basic", "Standard"],
       "defaultValue": "Free"
     },
     "workerSize": {
       "type": "string",
-      "allowedValues": [
-        "0",
-        "1",
-        "2"
-      ],
-      "defaultValue": "0"
+      "allowedValues": ["0", "1", "2"],
+      "defaultValue": "0",
+      "metadata": {
+        "description": "The instance size of the hosting plan (small, medium, or large)."
+      }
     },
     "repoUrl": {
-      "type": "string"
+      "type": "string",
+      "metadata": {
+        "description": "The URL for the GitHub repository that contains the project to deploy."
+      }
     },
     "branch": {
-      "type": "string"
+      "type": "string",
+      "metadata": {
+        "description": "The branch of the GitHub repository to use."
+      }
     }
   },
-  "resources": [{
+  "resources": [
+    {
       "apiVersion": "2014-06-01",
       "name": "[parameters('hostingPlanName')]",
       "type": "Microsoft.Web/serverfarms",
@@ -64,7 +74,8 @@
         "serverFarmId": "[parameters('hostingPlanName')]",
         "clientAffinityEnabled": false
       },
-      "resources": [{
+      "resources": [
+        {
           "apiVersion": "2015-08-01",
           "type": "config",
           "name": "web",
@@ -72,10 +83,12 @@
             "[resourceId('Microsoft.Web/Sites', parameters('siteName'))]"
           ],
           "properties": {
-            "virtualApplications": [{
-              "virtualPath": "/",
-              "physicalPath": "site\\wwwroot"
-            }],
+            "virtualApplications": [
+              {
+                "virtualPath": "/",
+                "physicalPath": "site\\wwwroot"
+              }
+            ],
             "use32BitWorkerProcess": true
           }
         },

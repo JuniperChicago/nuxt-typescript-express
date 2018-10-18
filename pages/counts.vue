@@ -4,7 +4,9 @@
 
       <h1 class="title">Store Test</h1>
       <p></p>
-      <h2>Clicked: {{ $store.state.count }}</h2>
+      <h2>count: {{ $store.state.count }}</h2>
+      <h2>HomeCount: {{ $store.state.homeCount }}</h2>
+      <p>HomeCount is the number of times the home page has been visited since server load</p>
       <p></p>
       <button class="button--grey" @click="$store.commit('increment')">increment</button>
       <button class="button--grey"  @click="$store.commit('decrement')">decrement</button>

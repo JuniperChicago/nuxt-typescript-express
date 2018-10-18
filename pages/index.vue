@@ -36,6 +36,7 @@ export default class extends Vue {
   // fetch with provided context is called on the server side before instantiating component
   fetch({ store }) {
     store.commit('increment')
+    store.commit('incrementHomeCount')
   }
 }
 </script>
