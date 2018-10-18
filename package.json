@@ -4,10 +4,15 @@
   "description": "Nuxt starter with Typescript",
   "author": "Robin Schulemann <rschulemann@gmail.com>",
   "private": true,
+  "engines": {
+    "node": ">=8.0.0",
+    "npm": ">=5.6.0"
+  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start",
+    "start": "nuxt build && nuxt start",
+    "postinstall": "nuxt build",
     "generate": "nuxt generate"
   },
   "dependencies": {

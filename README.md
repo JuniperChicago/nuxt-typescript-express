@@ -1,8 +1,6 @@
-# Nuxt Starter with Typescript
+# Nuxt Typescript Express AzureWebapps
 
-> Nuxt starter with Typescript
-
-Fragments of useful Nuxt features have been added to show implementation, such as middleware, serverMiddleware, and soon utilizing the Vuex store.
+> Nuxt starter with Typescript and Express, can run on Azure
 
 ## Build Setup
 
@@ -21,6 +19,6 @@ $ yarn start
 $ yarn run generate
 ```
 
-This is a typescript version of the nuxt boilerplate found at https://github.com/nuxt/codesandbox-nuxt
+## Azure Deployment
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+[![Deploy to Azure](https://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
