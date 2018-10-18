@@ -1,8 +1,6 @@
-# codesandbox-nuxt-typescript
+# Nuxt Starter with Typescript
 
-> Nuxt starter with Typescript for CodeSandBox
-
-[run at codesandbox.io](https://codesandbox.io/s/github/JuniperChicago/codesandbox-nuxt-typescript/tree/master/)
+> Nuxt starter with Typescript
 
 Fragments of useful Nuxt features have been added to show implementation, such as middleware, serverMiddleware, and soon utilizing the Vuex store.
 
