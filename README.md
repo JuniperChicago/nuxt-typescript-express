@@ -1,6 +1,8 @@
-# Nuxt Typescript Express AzureWebapps
+# Nuxt Typescript Express
 
-> Nuxt starter with Typescript and Express, can run on Azure
+> Nuxt starter with Typescript and Express, can run on Azure App Service
+
+Includes minimal working elements to demonstrate middleware, server middleware written in typescript, and Vuex store.
 
 ## Build Setup
 
