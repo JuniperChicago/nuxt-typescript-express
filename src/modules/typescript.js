@@ -1,4 +1,4 @@
-module.exports = function() {
+module.exports = function () {
   // Add .ts extension for store, middleware and more
   this.nuxt.options.extensions.push("ts");
   // Extend build
@@ -7,12 +7,12 @@ module.exports = function() {
       loader: "ts-loader",
       options: {
         appendTsSuffixTo: [/\.vue$/]
+
       }
     };
     // Add TypeScript loader
     config.module.rules.push(
-      Object.assign(
-        {
+      Object.assign({
           test: /((client|server)\.js)|(\.tsx?)$/
         },
         tsLoader
