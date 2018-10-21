@@ -27,6 +27,14 @@ module.exports = {
       href: "/favicon.ico"
     }]
   },
+  /** 
+   * middleware located here will be called before every route change
+   * 
+   */
+
+  router: {
+    middleware: 'route-change'
+  },
   /**
    * small middleware function that does nothing but next()
    */
