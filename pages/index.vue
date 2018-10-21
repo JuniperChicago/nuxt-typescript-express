@@ -17,6 +17,7 @@
           to="/counts"
           class="button--grey">Store Test</nuxt-link>      
       </div>
+      <h2>Rendered by <span class="name">{{ name }}</span></h2>
     </div>
   </section>
 </template>
@@ -33,9 +34,17 @@ import IconLink from '~/components/IconLink.vue'
   }
 })
 export default class extends Vue {
-  // fetch with provided context is called on the server side before instantiating component
-  fetch({ store }) {
-    store.commit('increment')
+  asyncData(context) {
+    if (process['server']) {
+      // console.log('rendered on server')
+    }
+    return {
+      name: process['server'] ? 'server' : 'client'
+    }
+  }
+
+  fetch(context) {
+    const { store } = context
     store.commit('incrementHomeCount')
   }
 }
@@ -65,5 +74,8 @@ export default class extends Vue {
 
 .links {
   padding-top: 15px;
+}
+.name {
+  color: #3b8070;
 }
 </style>
