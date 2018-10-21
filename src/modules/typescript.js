@@ -8,7 +8,12 @@ module.exports = function () {
       options: {
         appendTsSuffixTo: [/\.vue$/]
 
-      }
+      },
+      // may not be needed because I located dist outside src
+      exclude: [
+        /dist/,
+        /\.temp/
+      ]
     };
     // Add TypeScript loader
     config.module.rules.push(

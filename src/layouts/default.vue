@@ -6,9 +6,7 @@
 
 
 <script lang="ts">
-export default {
-  
-}
+export default {}
 </script>
 
 <style>
@@ -58,7 +56,7 @@ html {
 .button--grey {
   display: inline-block;
   border-radius: 4px;
-  border: 1px solid #35495e;
+  border: 1px solid #768494;
   color: #35495e;
   text-decoration: none;
   padding: 10px 30px;
@@ -67,6 +65,6 @@ html {
 
 .button--grey:hover {
   color: #fff;
-  background-color: #35495e;
+  background-color: #7a8ca0;
 }
 </style>

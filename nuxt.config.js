@@ -1,7 +1,7 @@
 const pkg = require("./package");
 
 module.exports = {
-  srcDir: 'src/',
+  srcDir: './src',
   mode: "universal",
 
   /*
@@ -41,7 +41,7 @@ module.exports = {
    */
 
   serverMiddleware: [
-    "~/api/index"
+    "./api/index"
   ],
 
   /*
@@ -55,7 +55,7 @@ module.exports = {
    ** Global CSS
    */
   // css: [],
-  css: ["~/assets/style/main.css"],
+  // css: ["~/assets/style/main.css"],
 
   /*
    ** Plugins to load before mounting the App
@@ -68,7 +68,8 @@ module.exports = {
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
     "@nuxtjs/axios",
-    "~/modules/typescript.js"
+    "./modules/typescript.js",
+    ['nuxt-sass-resources-loader', './assets/style/main.scss']
   ],
   /*
    ** Axios module configuration

@@ -24,8 +24,8 @@
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
-import Logo from '~/components/Logo.vue'
-import IconLink from '~/components/IconLink.vue'
+import Logo from '../components/Logo.vue'
+import IconLink from '../components/IconLink.vue'
 
 @Component({
   components: {
@@ -52,7 +52,7 @@ export default class extends Vue {
 
 
 
-<style scoped>
+<style lang="scss" scoped>
 .title {
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;

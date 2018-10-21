@@ -11,9 +11,9 @@
 export default {}
 </script>
 
-<style>
+<style lang="scss" scoped>
 /* using global css for these */
-/* .NuxtLogo {
+.NuxtLogo {
   display: inline-block;
   position: relative;
   overflow: hidden;
@@ -58,5 +58,5 @@ export default {}
   border-left: 35px solid transparent;
   border-right: 35px solid transparent;
   border-bottom: 60px solid #fff;
-} */
+}
 </style>

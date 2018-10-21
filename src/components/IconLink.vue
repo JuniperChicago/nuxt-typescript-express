@@ -4,17 +4,15 @@
 
 
 <script lang="ts">
-export default {
-  
-}
+export default {}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 svg {
   height: 1em;
   width: 1em;
-  top: .3em;
-  left: .2em;
+  top: 0.3em;
+  left: 0.2em;
   position: relative;
 }
 </style>
