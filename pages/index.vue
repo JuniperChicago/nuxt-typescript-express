@@ -3,19 +3,19 @@
     <div>
       <logo/>
       <h1 class="title">NUXT</h1>
-      <h2 class="subtitle">Starter for CodeSandBox</h2>
-      <h3>with Typescript</h3>
+      <div class="subtitle">Nuxt Starter</div>
+      <div class="byline"> with Typescript and Bulma</div>
       <div class="links">
         <a
           href="https://nuxtjs.org/"
           target="_blank"
-          class="button--green">Documentation <icon-link/></a>
+          class="button">Documentation <icon-link/></a>
         <nuxt-link
           to="/about"
-          class="button--grey">About</nuxt-link>
+          class="button">About</nuxt-link>
         <nuxt-link
           to="/counts"
-          class="button--grey">Store Test</nuxt-link>      
+          class="button">Store Test</nuxt-link>      
       </div>
       <h2>Rendered by <span class="name">{{ name }}</span></h2>
     </div>
@@ -52,7 +52,7 @@ export default class extends Vue {
 
 
 
-<style lang="scss" scoped>
+<style lang="scss">
 // .title {
 //   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
 //     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -73,6 +73,10 @@ export default class extends Vue {
   font-size: 3em;
   color: #526488;
   word-spacing: 5px;
+}
+.byline {
+  font-weight: 300;
+  font-size: 2em;
   padding-bottom: 15px;
 }
 

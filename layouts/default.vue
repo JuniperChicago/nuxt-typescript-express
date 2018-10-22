@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container-centered">
     <nuxt/>
   </div>
 </template>
@@ -28,14 +28,6 @@ export default {}
 //   box-sizing: border-box;
 //   margin: 0;
 // }
-
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 
 // .button--green {
 //   display: inline-block;
