@@ -53,15 +53,19 @@ export default class extends Vue {
 
 
 <style lang="scss" scoped>
+// .title {
+//   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+//     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+//   display: block;
+//   font-weight: 400;
+//   font-size: 100px;
+//   color: #526488;
+//   letter-spacing: 1px;
+//   font-size: 6em;
+// }
+
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 400;
-  font-size: 100px;
-  color: #526488;
-  letter-spacing: 1px;
-  font-size: 6em;
+  color: $primary;
 }
 
 .subtitle {
