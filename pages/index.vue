@@ -9,13 +9,13 @@
         <a
           href="https://nuxtjs.org/"
           target="_blank"
-          class="button">Documentation <icon-link/></a>
+          class="btn">Documentation <icon-link/></a>
         <nuxt-link
           to="/about"
-          class="button">About</nuxt-link>
+          class="btn">About</nuxt-link>
         <nuxt-link
           to="/counts"
-          class="button">Store Test</nuxt-link>      
+          class="btn">Store Test</nuxt-link>      
       </div>
       <h2>Rendered by <span class="name">{{ name }}</span></h2>
     </div>
@@ -65,7 +65,7 @@ export default class extends Vue {
 // }
 
 .title {
-  color: $primary;
+  color: blue;
 }
 
 .subtitle {
