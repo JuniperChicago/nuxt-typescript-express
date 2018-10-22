@@ -24,6 +24,12 @@
     }
   },
   "exclude": [
-    "node_modules"
+    "node_modules",
+    ".nuxt",
+    "dist",
+    "_nuxt",
+    "nuxt.config.js",
+    "server.js",
+    "modules/typescript.js"
   ]
 }

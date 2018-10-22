@@ -24,8 +24,8 @@
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
-import Logo from '../components/Logo.vue'
-import IconLink from '../components/IconLink.vue'
+import Logo from '~/components/Logo.vue'
+import IconLink from '~/components/IconLink.vue'
 
 @Component({
   components: {

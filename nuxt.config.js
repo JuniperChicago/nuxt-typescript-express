@@ -1,7 +1,6 @@
 const pkg = require("./package");
 
 module.exports = {
-  srcDir: './src',
   mode: "universal",
 
   /*
@@ -41,7 +40,7 @@ module.exports = {
    */
 
   serverMiddleware: [
-    "./api/index"
+    "~/api/index"
   ],
 
   /*
@@ -68,7 +67,7 @@ module.exports = {
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
     "@nuxtjs/axios",
-    "./modules/typescript.js",
+    "~/modules/typescript.js",
     ['nuxt-sass-resources-loader', './assets/style/main.scss']
   ],
   /*
