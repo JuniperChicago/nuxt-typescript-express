@@ -4,7 +4,7 @@
       <logo/>
       <h1 class="title">NUXT</h1>
       <div class="subtitle">Nuxt Starter</div>
-      <div class="byline"> with Typescript and Bulma</div>
+      <div class="byline"> with Typescript and Primer</div>
       <div class="links">
         <a
           href="https://nuxtjs.org/"
