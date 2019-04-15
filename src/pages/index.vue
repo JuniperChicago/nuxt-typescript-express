@@ -23,9 +23,10 @@
 </template>
 
 <script lang="ts">
+// ~ is not working for some reason... 
+import Logo from '../components/Logo.vue'
+import IconLink from '../components/IconLink.vue'
 import { Component, Vue } from 'nuxt-property-decorator'
-import Logo from '~/components/Logo.vue'
-import IconLink from '~/components/IconLink.vue'
 
 @Component({
   components: {

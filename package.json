@@ -1,6 +1,6 @@
 {
   "name": "nuxt-typescript-express",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Nuxt starter with Typescript",
   "author": "Robin Schulemann <rschulemann@gmail.com>",
   "private": true,
@@ -16,17 +16,20 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.3.3",
-    "@types/node": "10.12.0",
+    "@nuxt/typescript": "^2.6.1",
+    "@nuxtjs/axios": "^5.4.1",
+    "@types/node": "11.13.4",
     "cross-env": "^5.2.0",
-    "nuxt": "^2.2.0",
-    "nuxt-property-decorator": "1.2.0",
-    "ts-loader": "5.2.2",
+    "nuxt": "^2.6.1",
+    "nuxt-property-decorator": "2.1.3",
+    "ts-loader": "5.3.3",
     "typescript": "3.1.3 - latest",
-    "vuex-class": "0.3.1"
+    "vuex-class": "0.3.2",
+    "ts-node": "^8.1.0"
   },
   "devDependencies": {
-    "nodemon": "^1.18.4"
+    "nodemon": "^1.18.11"
+
   },
   "keywords": []
 }
